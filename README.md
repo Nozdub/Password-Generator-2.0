@@ -10,6 +10,7 @@
   The project as is can be run in the IDE where it will generate passwords through the GUI.
 
 ## **Future development**
-  I would like to add some way to integrate a function to where it either adds it to a dictionary of accounts, then exports it to a text file that again can be used
-  in a password authenticator app.
-
+  Under are elements I would like to improve or add:
+  - Word, number and symbol amount selector in the GUI.
+  - A save passwords function that takes it and saves it to a library of passwords and named accounts like {"Twitter": "PASSWORD", "Facebook": "PASSWORD"}, maybe in a       for loop so it's printed downwards.
+  - Styling elements, rework colors, maybe add shading.
