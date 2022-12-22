@@ -1,16 +1,13 @@
 # **Password Generator**
 
 ## **Project Description**
-  A private Python project I started during some downtime.
+  A reworked password generator project I started mid 2022.
   
- The goal with this small project was to create a password generator that selected a random selection of words, symbols and numbers (based on amount selected by user)
- append these to a new list, shuffle it and then concatenate it.
- 
- The function I made uses 3 for loops to get how many words, symbols and numbers the user wants the password to contain and then as stated above, creates a password.
+  As is right now the GUI is made up of customTKinter, it gives a cleaner vibe than basic tkinter. The functions remain somewhat the same as in the previous edition,       except for that it now takes 4 words, 4 symbols and 4 numbers instead of user input. Might change this to drop down selection element in the GUI in the future.
 
 
 ## **How to Use the Project**
-  The project consists of two python files, one that runs in your IDEs terminal the other file runs through TKinter.
+  The project consists of two python files, one that runs in your IDEs terminal the other file runs through customTkinter.
 
 ## **Future development**
   I would like to add some way to integrate a function to where it either adds it to a dictionary of accounts, then exports it to a text file that again can be used
