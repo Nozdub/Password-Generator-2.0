@@ -7,7 +7,7 @@
 
 
 ## **How to Use the Project**
-  The project consists of two python files, one that runs in your IDEs terminal the other file runs through customTkinter.
+  The project as is can be run in the IDE where it will generate passwords through the GUI.
 
 ## **Future development**
   I would like to add some way to integrate a function to where it either adds it to a dictionary of accounts, then exports it to a text file that again can be used
