@@ -11,6 +11,5 @@
 
 ## **Future development**
   Under are elements I would like to improve or add:
-  - Word, number and symbol amount selector in the GUI.
   - A save passwords function that takes it and saves it to a library of passwords and named accounts like {"Twitter": "PASSWORD", "Facebook": "PASSWORD"}, maybe in a       for loop so it's printed downwards.
   - Styling elements, rework colors, maybe add shading.
