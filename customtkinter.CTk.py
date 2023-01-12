@@ -39,21 +39,19 @@ class App(customtkinter.CTk):
 
         # Initializing the customtkinter dropdown menus.
 
-        self.combobox_1 = customtkinter.CTkOptionMenu(master=self, font=self.my_font, values=["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-                                                      command=self.combobox_callback_one)
+        self.combobox_1 = customtkinter.CTkOptionMenu(master=self, font=self.my_font, values=["1", "2", "3", "4", "5", "6", "7", "8", "9"])
+
 
         self.combobox_1.grid(row=2, column=1, padx=10, pady=10)
         self.label_one = customtkinter.CTkLabel(master=self, font=self.my_font, text="How many words would you like in your password?")
         self.label_one.grid(row=2, column=0)
 
-        self.combobox_2 = customtkinter.CTkOptionMenu(master=self, font=self.my_font, values=["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-                                                      command=self.combobox_callback_two)
+        self.combobox_2 = customtkinter.CTkOptionMenu(master=self, font=self.my_font, values=["1", "2", "3", "4", "5", "6", "7", "8", "9"])
         self.combobox_2.grid(row=3, column=1, padx=10, pady=10, )
         self.label_two = customtkinter.CTkLabel(master=self, font=self.my_font, text="How many numbers would you like in your password?")
         self.label_two.grid(row=3, column=0)
 
-        self.combobox_3 = customtkinter.CTkOptionMenu(master=self, font=self.my_font, values=["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-                                                      command=self.combobox_callback_three)
+        self.combobox_3 = customtkinter.CTkOptionMenu(master=self, font=self.my_font, values=["1", "2", "3", "4", "5", "6", "7", "8", "9"])
         self.combobox_3.grid(row=4, column=1, padx=10, pady=10, )
         self.label_three = customtkinter.CTkLabel(master=self, font=self.my_font, text="How many symbols would you like in your password?")
         self.label_three.grid(row=4, column=0)
