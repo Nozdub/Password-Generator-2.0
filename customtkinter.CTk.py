@@ -10,12 +10,10 @@ customtkinter.set_default_color_theme("custom_theme.json")
 file = open("words_alpha.txt", "r")
 word_list = list(file.read().split("\n"))
 wip_password = []
+password_list = []
 
 
 # CustomTkInter class.
-# Could consider setting up text boxes and buttons in separate classes and then importing them.
-
-
 class App(customtkinter.CTk):
 
     def __init__(self):
@@ -60,7 +58,7 @@ class App(customtkinter.CTk):
         self.button = customtkinter.CTkButton(master=self, font=self.my_font, command=self.button_one_callback, text="Generate password")
         self.button.grid(row=3, column=4, padx=10, pady=10)
 
-        self.button = customtkinter.CTkButton(master=self, font=self.my_font, command=self.button_event, text="Test password")
+        self.button = customtkinter.CTkButton(master=self, font=self.my_font, command=self.button_event, text="Save password")
         self.button.grid(row=4, column=4, padx=10, pady=10)
 
     def combobox_callback_one(self):
@@ -73,6 +71,8 @@ class App(customtkinter.CTk):
         return self.combobox_3.get()
 
     def button_one_callback(self):
+        # Clears existing password for each click of the button.
+        wip_password.clear()
         # Collects 4 random words from words list and appends to a list.
         for i in range(int(self.combobox_callback_one())):
             part_one = random.choice(word_list)
@@ -95,17 +95,23 @@ class App(customtkinter.CTk):
 
         # Turns the password list into a string.
         completed_password = "".join(map(str, wip_password))
+        password_list.append("".join(map(str, wip_password)))
 
         # Prints password to textbox in GUI.
         self.textbox_1.insert("insert", completed_password + "\n")
 
-        # Clears existing password for each click of the button.
-        wip_password.clear()
-
-    # WiP button, want to add check of password strength.
+    # Ads event to button click that stores the given passwords shown in textbox1 to a dictionary with user accounts as
+    # keys.
     def button_event(self):
-        print("Hi. this functionality will be implemented later.")
-
+        stored_passwords = []
+        for i in password_list:
+            accounts = input("What account do you want the password stored to? ")
+            password_dict = {f"{accounts}": f"{i}"}
+            stored_passwords.append(password_dict)
+        for u in stored_passwords:
+            f = open("user_passwords.txt", "a")
+            f.write(str(f"{u}\n"))
+            f.close()
 
 # Initializes the GUI.
 if __name__ == "__main__":
