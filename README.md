@@ -17,3 +17,4 @@
   - Encrypt the file.
   - Having a way of checking what accounts are stored in the file and if the account name is recognized it replaces it instead of making a new entry?
   - Consider changing up the colorscheme.
+  - Consider writing to Json file?
