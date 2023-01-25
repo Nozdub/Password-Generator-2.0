@@ -3,7 +3,10 @@
 ## **Project Description**
   A reworked password generator project I started mid 2022.
   
-  As is right now the GUI is made up of customTKinter, it gives a cleaner vibe than basic tkinter. The functions remain somewhat the same as in the previous edition,       except for that it now takes 4 words, 4 symbols and 4 numbers instead of user input. Might change this to drop down selection element in the GUI in the future.
+  Utilizes CustomTkInter for GUI, takes 1-9 words, numbers and symbols to create a random password from a dictionary (book). 
+  - Generates randomized passwords.
+  - Stores passwords in dictionary format where user fills in user accounts/platforms in console (will change) as keys.
+  - Writes dictionary to file.
 
 
 ## **How to Use the Project**
@@ -11,5 +14,6 @@
 
 ## **Future development**
   Under are elements I would like to improve or add:
-  - A save passwords function that takes it and saves it to a library of passwords and named accounts like {"Twitter": "PASSWORD", "Facebook": "PASSWORD"}, maybe in a       for loop so it's printed downwards.
-  - Styling elements, rework colors, maybe add shading.
+  - Encrypt the file.
+  - Having a way of checking what accounts are stored in the file and if the account name is recognized it replaces it instead of making a new entry?
+  - Consider changing up the colorscheme.
